@@ -1,8 +1,7 @@
 <?php
-// Otsi kõik pildid kaustast reklaam/ (jpg ja png)
+
 $banners = glob("reklaam/*.{jpg,png}", GLOB_BRACE);
 
-// Sorteeri või sega, kui soovid juhuslikku järjekorda
 shuffle($banners);
 ?>
 <!DOCTYPE html>
@@ -42,7 +41,6 @@ body {
 
 <?php include "navbar.php"; ?>
 
-<!-- 🔥 BÄNNER / CAROUSEL -->
 <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
 
@@ -61,8 +59,6 @@ body {
     <?php endforeach; ?>
 
   </div>
-
-  <!-- Navigeerimisnupud -->
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
     <span class="carousel-control-prev-icon"></span>
   </button>
@@ -71,15 +67,12 @@ body {
   </button>
 </div>
 
-<!-- 🧱 SISSEJUHATUS -->
 <section class="container py-5 text-center">
   <h2 class="section-title">Kõik ehituseks ühest kohast</h2>
   <p class="text-muted mt-3">
     Pakume laia valikut ehitusmaterjale nii professionaalidele kui koduehitajatele.
   </p>
 </section>
-
-<!-- 🧱 TÕSTETUD TOOTED -->
 <section class="bg-light py-5">
   <div class="container">
     <h3 class="text-center mb-4 section-title">Populaarsed tooted</h3>
@@ -114,7 +107,6 @@ body {
   </div>
 </section>
 
-<!-- 📞 CTA -->
 <section class="container py-5 text-center">
   <h3 class="section-title">Vajad abi materjalide valikul?</h3>
   <p class="text-muted">Kasuta meie kalkulaatorit või võta meiega ühendust.</p>
@@ -122,7 +114,6 @@ body {
   <a href="contact.php" class="btn btn-outline-secondary">Kontakt</a>
 </section>
 
-<!-- ⚫ FOOTER -->
 <footer class="bg-dark text-light text-center py-3">
   <small>© <?= date("Y") ?> EHITUS+. Kõik õigused kaitstud.</small>
 </footer>
@@ -130,3 +121,4 @@ body {
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
