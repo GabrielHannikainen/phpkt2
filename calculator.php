@@ -70,7 +70,6 @@ body {
 
 <?php include "navbar.php"; ?>
 
-<!-- 🔥 HERO -->
 <div class="hero-section mb-5">
     <div class="hero-overlay"></div>
     <div class="position-relative">
@@ -79,7 +78,6 @@ body {
     </div>
 </div>
 
-<!-- 🧮 KALKULAATOR -->
 <section class="container py-5">
     <div class="row justify-content-center">
         <div class="col-md-6">
@@ -125,3 +123,4 @@ body {
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
